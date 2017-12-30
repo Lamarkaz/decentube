@@ -61,17 +61,21 @@ export default {
       var options = {
         shouldSort: true,
         threshold: 0.2,
-        location: 0,
+        location: 3,
         distance: 100,
-        maxPatternLength: 32,
-        minMatchCharLength: 1,
+        maxPatternLength: 150,
+        minMatchCharLength: 3,
         keys: [
           "title",
           "description"
       ]
       };
       var fuse = new Fuse(this.list, options); // "list" is the item array
-      return fuse.search(this.query);
+      if(this.query.length > 32){
+        return [];
+      }else{
+        return fuse.search(this.query);
+      }
     }
   },
   created () {
@@ -83,7 +87,6 @@ export default {
       for (var i = 0; i < event.length; i++){
         list.push(event[i].returnValues);
       }
-      console.log(list)
       self.list = list;
     })
   },

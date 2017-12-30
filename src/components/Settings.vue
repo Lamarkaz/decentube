@@ -20,7 +20,7 @@
             </v-avatar>
             </v-flex>
             <v-flex xs12>
-              <v-flex xs7 offset-md2 style="margin-bottom: 35px">
+              <v-flex xs12 style="margin-bottom: 35px; margin-left: 14px">
                 <v-text-field
                   color ="cyan darken-2"
                   label="Avatar URL"

@@ -5,8 +5,8 @@
     </video>
     <center>
       <div class="overlay">
-          <img src="/dist/logo.svg" width="180px"></img>
-          <h1 class="MainTitle" style="margin-bottom: 40px; font-weight: 700">decentube.</h1>
+          <img src="/dist/logo.svg" width="150px"></img>
+          <h1 class="MainTitle" style="margin-bottom: 50px; font-weight: 700">decentube.</h1>
           <h1 class="MainTitle">The free, ad-free, video freedom platform</h1>
       </div>
       <div class="mechanism-title">
@@ -67,17 +67,18 @@
             </v-stepper-step>
           </v-stepper-header>
         </v-stepper>
-
-        <div class="footer">
-          <p class="dev">DEVELOPED BY</p>
-          <a href="https://lamarkaz.com" target="_blank">
-            <img src="https://lamarkaz.com/assets/img/lamarkazlogo.svg" width="60px" style="padding-top: 25px"></img>
-          </a>
-        </div>
       </div>
     </center>
   </div>
 </template>
+
+<script>
+export default {
+  beforeCreate: function() {
+      document.body.className = 'home';
+  }
+}
+</script>
 
 <style scoped>
   .contain {
@@ -92,68 +93,41 @@
     max-height: 95%;
   }
   .overlay {
+    background-color: rgba(0,0,0,.75);
+    position:absolute;
     top:0;
-    position: fixed;
     left:0;
     z-index:1;
-    padding-top: 300px;
+    padding-top: 200px;
   }
   .MainTitle {
     color: white;
     position: relative;
-    font-size: 40px;
+    font-size: 33px;
     font-weight: 100;
   }
   .mechanism-title {
     color: #0097a7;
     display: block;
     position: relative;
-    min-height: 110px;
-    max-height: 110px;
+    height: 85px;
     z-index: 2;
     background-color: white;
-    padding: 30px;
-    font-size: 17px;
+    padding: 20px;
+    font-size: 14px;
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
     background-repeat: repeat;
   }
   .mechanism {
     position: relative;
-    min-height: 921px;
-    max-height: 921px;
+    height: auto;
     background-color: #0097a7;
     z-index: 3;
     background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
     background-repeat: repeat;
-  }
-  .footer {
-    padding: 0px;
-    min-height: 180px;
-    max-height: 180px;
-    max-width: 190px;
-    z-index: 2;
-    position: relative;
-    display: block;
-    background-color: white;
-    padding-bottom: 30px;
-    transform: translateY(88%);
-    opacity: 0.5;
-    transition: all 0.5s ease-in-out;
-    cursor: pointer;
-  }
-  .footer:hover {
-    opacity: 1;
-  }
-  .dev {
-    color: black;
-    font-weight: 100;
-    padding-top: 25px;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 16px;
-    background-color: white;
-    margin-bottom: 0px;
+    padding-bottom: 120px;
+    padding-top: 50px;
   }
   .mech-card {
     min-height: 350px;
@@ -181,9 +155,5 @@
     color: white;
     box-shadow: none;
     border: 1px solid rgba(255,255,255,.2) !important;
-  }
-  .application .theme--light.stepper .stepper__label, .theme--light .stepper .stepper__label [data-v-8dc7cce2]{
-    color: white !important;
-    font-weight: 400 !important;
   }
 </style>
