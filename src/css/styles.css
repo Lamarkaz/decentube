@@ -10,3 +10,21 @@
 .fade-enter, .fade-leave-active {
   opacity: 0
 }
+
+body.home {
+    background: rgb(0, 151, 167);
+}
+
+.application .theme--light.stepper .stepper__label, .theme--light .stepper .stepper__label [data-v-8dc7cce2] {
+  color: white !important;
+    font-weight: 400 !important;
+}
+
+.bodyMainMM {
+  display: block !important;
+  font-size: 15px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: -5px;
+  padding-bottom: 20px;
+}
