@@ -84,11 +84,11 @@ const app = new Vue({
                 Decentube.methods.creators(accounts[0]).call(function(error, result){
                   if(!error){
                     self.ready = true;
-                    self.name = result[1];
-                    self.avatar = result[2];
-                    self.bio = result[3];
-                    self.coinhive = result[4];
-                    self.address = accounts[0];
+                    self.name = result.name;
+                    self.avatar = result.avatar;
+                    self.bio = result.bio;
+                    self.coinhive = result.coinhive;
+                    self.address = accounts.addr;
                     if(result[1] === ""){
                       self.registered = false;
                     }else{

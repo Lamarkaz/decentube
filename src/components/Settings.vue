@@ -109,7 +109,7 @@ export default {
     '$root.name': function(){this.name = this.$root.name},
     '$root.avatar': function(){this.avatar = this.$root.avatar},
     '$root.bio': function(){this.bio = this.$root.bio},
-    '$root.coinhive': function(){this.name = this.$root.coinhive},
+    '$root.coinhive': function(){this.coinhive = this.$root.coinhive},
     '$root.registered': function(){this.registered = this.$root.registered}
   },
   methods: {
