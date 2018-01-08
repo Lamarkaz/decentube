@@ -2,7 +2,7 @@
   <div>
     <v-flex md12>
         <div class="text-xs-center">
-          <v-chip color="green" text-color="white">
+          <v-chip color="green" text-color="white" style="width: 280px !important;">
             <v-avatar>
                 <v-icon style="color: white !important; opacity: 1 !important">settings_backup_restore</v-icon>
             </v-avatar>
@@ -30,6 +30,9 @@
       Decentube.methods.videos(this.id).call(function(error, result){
         if(error) console.log(error);
         self.title = result.title;
+        if(self.title.length > 28){
+          self.title = self.title.slice(0, 28) + "..."
+        }
         self.$root.client.add(result.magnet);
       })
     },
