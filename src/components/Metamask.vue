@@ -8,14 +8,14 @@
         <v-card-title primary-title>
           <div class="headline mmask">METAMASK IS MISSING!</div>
         </v-card-title>
-        <div class="bodyMainMM">Decentube is an Etheruem dApp, this means it's running on the ethereum blockchain. In order to create a profile on decentube you must install <a href="https://metamask.io" style="color:#FF8300">Metamask</a> browser extension.
+        <div class="bodyMainMM">Decentube is an Ethereum dApp, this means it's running on the Ethereum blockchain. In order to create a profile on decentube you must install <a href="https://metamask.io" style="color:#FF8300">Metamask</a> browser extension.
         </div>
         <div class="what">What is MetaMask?</div>
         <div class="bodyMainMM">
-        MetaMask is a bridge for your browser to be able to connect to the ethereum blockchain, it allows you to run Ethereum dApps like Decentube right in your browser without running a full Ethereum node.
+        MetaMask is a bridge for your browser to be able to connect to the Ethereum blockchain, it allows you to run Ethereum dApps, like Decentube, right in your browser without running a full Ethereum node on your computer.
         <br />
         <br />
-        Notice that Metamask is only availabe as an extension for chrome, this means that if you're using Safari or Firefox you need to download Chrome browser first.
+        Notice that Metamask is only availabe as an extension for chrome, this means that if you're usig a different browser, you need to download Chrome browser first.
         </div>
         <center class="video_wrapper">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/6Gf_kRE4MJU?rel=0" frameborder="0" allowfullscreen></iframe>
