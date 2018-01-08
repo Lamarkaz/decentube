@@ -123,7 +123,7 @@
       </v-btn>
       <span>Settings</span>
     </v-tooltip>
-    <v-btn flat v-if="!$root.registered" href="/#/settings">LOGIN</v-btn>
+    <v-btn flat v-if="!$root.registered" href="/#/settings">REGISTER</v-btn>
 
   </v-toolbar>
   <v-content>

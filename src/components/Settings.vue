@@ -2,7 +2,7 @@
     <v-container class="wrapper">
       <Loader v-show="!ready"></Loader>
       <Metamask v-show="ready && !Metamask"></Metamask>
-      <v-flex v-if="ready && Metamask" xs6 offset-md3>
+      <v-flex v-if="ready && Metamask" xs8 offset-md2>
         <v-alert v-show="success" outline color="success" icon="check_circle" :value="true">
           Success! You're all good.
         </v-alert>
@@ -149,7 +149,10 @@ export default {
 
 <style scoped>
   .wrapper {
-    margin-top: 50px;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    max-width: 900px;
   }
   .alert {
     margin-bottom: 20px;
