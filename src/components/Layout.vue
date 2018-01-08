@@ -73,7 +73,7 @@
           <v-icon>dashboard</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
-          <v-list-tile-title>Home</v-list-tile-title>
+          <v-list-tile-title>HOME</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
       <v-list-tile v-if="$root.registered" @click.stop="dialog = true">
@@ -81,7 +81,7 @@
           <v-icon>file_upload</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
-          <v-list-tile-title>Upload</v-list-tile-title>
+          <v-list-tile-title>UPLOAD NEW VIDEO</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
       <v-list-tile href="/#/settings">
@@ -89,7 +89,7 @@
           <v-icon>settings</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
-          <v-list-tile-title>Settings</v-list-tile-title>
+          <v-list-tile-title>SETTINGS</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
@@ -107,9 +107,9 @@
   <v-toolbar app dark color="cyan darken-2">
     <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
     <img src="dist/logo.svg" height="28px" style="margin-right: -10px; margin-left: 15px; cursor: pointer"></img>
-    <v-toolbar-title class="white--text" v-on:click="$router.push('/')">decentube</v-toolbar-title>
+    <v-toolbar-title class="white--text" v-on:click="$router.push('/')" style="font-family: Lato !important; font-size: 23px; font-weight: 700">decentube</v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-btn flat v-if="$root.registered" @click.stop="dialog = true">UPLOAD</v-btn>
+    <v-btn flat v-if="$root.registered" @click.stop="dialog = true" style="font-family: Lato !important; font-weight: 700 !important">UPLOAD</v-btn>
     <SearchBar></SearchBar>
     <v-tooltip v-show="$root.registered" bottom>
       <v-btn icon v-bind:href="profileURL" slot="activator">

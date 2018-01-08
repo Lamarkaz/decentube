@@ -62,5 +62,11 @@
     padding-left: 5px;
     opacity: 0.7 !important;
     cursor: pointer;
+    position: absolute;
+    right: 6px;
+    transition: all 0.5s ease-in !important;
+   }
+   .closeIcon:hover {
+     opacity: 1 !important;
    }
 </style>

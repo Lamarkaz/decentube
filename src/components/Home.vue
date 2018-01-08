@@ -10,7 +10,7 @@
           <h1 class="MainTitle">The free, ad-free, video freedom platform</h1>
       </div>
       <div class="mechanism-title">
-        <h1 style="font-weight: 100">Features</h1>
+        <h1 style="font-weight: 400; font-family: Lato !important">Features</h1>
       </div>
       <div class="mechanism">
         <v-layout row wrap style="padding-top: 90px; padding-left: 30px; padding-right: 30px">
@@ -18,28 +18,28 @@
             <v-card dark color="transparent" class="mech-card">
               <v-icon class="mech-icon" style="font-size: 80px">grain</v-icon>
               <v-card-text class="mech-text" style="margin-top: -9px">Decentralized</v-card-text>
-              <v-card-text>Decentube is a fully decentralized video streaming system that has no server, no operator and no single point of control or failure.</v-card-text>
+              <v-card-text class="Body-Text">Decentube is a fully decentralized video streaming system that has no server, no operator and no single point of control or failure.</v-card-text>
             </v-card>
           </v-flex>
           <v-flex xs3>
             <v-card dark color="transparent" class="mech-card">
               <v-icon class="mech-icon">event_seat</v-icon>
               <v-card-text class="mech-text">Fully Sovereign</v-card-text>
-              <v-card-text>You own your content. Decentube is bound by the rules of the blockchain in which no one can interfere in what you own. You are sovereign!</v-card-text>
+              <v-card-text class="Body-Text">You own your content. Decentube is bound by the rules of the blockchain in which no one can interfere in what you own. You are sovereign!</v-card-text>
             </v-card>
           </v-flex>
           <v-flex xs3>
             <v-card dark color="transparent" class="mech-card">
               <v-icon class="mech-icon">loyalty</v-icon>
               <v-card-text class="mech-text">Ad-free Monetization</v-card-text>
-              <v-card-text>Decentube takes advantage of state of the art browser mining technology to allow you to monetize your content without degrading your users' experience using ads.</v-card-text>
+              <v-card-text class="Body-Text">Decentube takes advantage of state of the art browser mining technology to allow you to monetize your content without degrading your users' experience using ads.</v-card-text>
             </v-card>
           </v-flex>
           <v-flex xs3>
             <v-card dark color="transparent" class="mech-card">
               <v-icon class="mech-icon">money_off</v-icon>
               <v-card-text class="mech-text">0% Fee</v-card-text>
-              <v-card-text>Creators take 100% of the profit. We do not (and will not) enforce fees on anyone. You get paid exactly what you deserve for delivering quality content.</v-card-text>
+              <v-card-text class="Body-Text">Creators take 100% of the profit. We do not (and will not) enforce fees on anyone. You get paid exactly what you deserve for delivering quality content.</v-card-text>
             </v-card>
           </v-flex>
         </v-layout>
@@ -101,9 +101,10 @@ export default {
     padding-top: 200px;
   }
   .MainTitle {
+    font-family: Lato !important;
     color: white;
     position: relative;
-    font-size: 33px;
+    font-size: 34px;
     font-weight: 100;
   }
   .mechanism-title {
@@ -145,6 +146,7 @@ export default {
     font-size: 70px;
   }
   .mech-text {
+    font-family: Lato !important;
     font-size: 21px;
     font-weight: 900;
 
@@ -155,5 +157,9 @@ export default {
     color: white;
     box-shadow: none;
     border: 1px solid rgba(255,255,255,.2) !important;
+  }
+  .Body-Text {
+    font-family: Open Sans !important;
+    font-size: 14px;
   }
 </style>
